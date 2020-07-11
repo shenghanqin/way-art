@@ -1,2 +1,32 @@
 header
-  color red
+  display flex
+  justify-content space-between
+  padding 34px 0
+
+
+.logo
+  width 104px
+  height 104px
+  
+  & > a
+    display block
+    img
+      max-width 100%
+      height auto
+
+.site-nav
+  display flex
+  align-items center
+
+  li + li
+    margin-left 72px
+
+  a
+    display block
+    color #686868
+    font-size 16px
+    line-height 1.4
+    font-weight 600
+
+    &:hover
+      color #000
