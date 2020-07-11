@@ -1,7 +1,5 @@
 import './styles.styl'
 import Link from '../link-html'
-import cx from 'classnames'
-
 
 export default function Header(props) {
   return (

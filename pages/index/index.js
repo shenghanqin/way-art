@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import Head from 'next/head'
+import React, { Fragment } from 'react'
+import DocumentMeta from '../../components/document-meta'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
 
@@ -10,13 +10,8 @@ export default function Home(props) {
 
   return (
     <Fragment>
-      <Head>
-        <title>Way Art</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
-      </Head>
+      <DocumentMeta title="Way Art" />
       <div className="container">
-
         <Header />
         <div className="home-list">
           {
@@ -34,10 +29,7 @@ export default function Home(props) {
             })
           }
         </div>
-
       </div>
-
-
       <Footer />
     </Fragment>
   )
