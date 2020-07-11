@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Header from '../components/header'
 
 export default function Home(props) {
   const { title } = props
@@ -12,12 +13,13 @@ export default function Home(props) {
       </Head>
 
       <main>
+        <Header />
         <h1 className="title">
           {title}
           Welcome to <a href="https://nextjs.org">Next.js!</a>
           <br />
-          <Link href="/about-us"><a>关于我们</a></Link>
-          <Link href="/contact-us"><a>联系我们</a></Link>
+          <Link href="./about-us.html"><a>关于我们</a></Link>
+          <Link href="./contact-us.html"><a>联系我们</a></Link>
         </h1>
       </main>
 
