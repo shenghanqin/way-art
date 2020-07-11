@@ -13,6 +13,10 @@ export default function Home(props) {
       <DocumentMeta title="Way Art" />
       <Header />
       <div className="container">
+        <div className="home-serivice">
+          <img src="./images/index-0.png" />
+
+        </div>
         <div className="home-list">
           {
             list.map((item, index) => {
