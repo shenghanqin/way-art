@@ -1,10 +1,12 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function Home(props) {
+  const { title } = props
+
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Way Art</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -206,4 +208,18 @@ export default function Home() {
       `}</style>
     </div>
   )
+}
+
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const data = {}
+
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: {
+      title: 123
+    }
+  }
 }
