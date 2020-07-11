@@ -11,8 +11,8 @@ export default function Home(props) {
   return (
     <Fragment>
       <DocumentMeta title="Way Art" />
+      <Header />
       <div className="container">
-        <Header />
         <div className="home-list">
           {
             list.map((item, index) => {

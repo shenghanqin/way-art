@@ -1,8 +1,13 @@
-header
+.header
+  border-bottom 1px solid #F4F4F4
+  margin-bottom 14px
+
+
+.header-content
   display flex
   justify-content space-between
   padding 14px 18px
-
+  
 
 .logo
   width 80px
@@ -32,19 +37,26 @@ header
       color #000
 
 @media (min-width 1025px)
-  header
-    padding 34px 0
+  
+  .header
+    margin-bottom 30px
+  .header-content
+    max-width 1200px
+    margin 0 auto
+    padding 30px 72px
+    box-sizing border-box
 
 
   .logo
     width 104px
-    height 104px
+    height 98px
 
   .site-nav
     display flex
     align-items center
 
     li + li
+      margin-top 0
       margin-left 72px
 
     a
