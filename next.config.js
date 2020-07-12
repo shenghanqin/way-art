@@ -9,5 +9,5 @@ module.exports = Object.assign(withStylus({
   //   localIdentName: "[local]___[hash:base64:5]",
   // }
 }), {
-  assetPrefix: isProd ? "/way-art" : '',
+  assetPrefix: ''//isProd ? "/way-art" : '',
 })

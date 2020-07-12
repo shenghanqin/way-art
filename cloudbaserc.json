@@ -1,5 +1,5 @@
 {
-  "envId": "env-jsdqwaon",
+  "envId": "env-hqngehhw",
   "framework": {
     "plugins": {
       "static": {
@@ -7,7 +7,7 @@
         "inputs": {
           "buildCommand": "npm run build",
           "outputPath": "out",
-          "cloudPath": "/way-art"
+          "cloudPath": "/"
         }
       }
     }

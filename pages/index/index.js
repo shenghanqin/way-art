@@ -1,42 +1,52 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, PureComponent } from 'react'
 import DocumentMeta from '../../components/document-meta'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
 
 import './styles.styl'
 
-export default function Home(props) {
-  const { title, list = [] } = props
+export default class Home extends PureComponent {
+  state = {
+    isShow: false
+  }
+  componentDidMount() {
+    console.log('123 :>> ', 123);
+  }
 
-  return (
-    <Fragment>
-      <DocumentMeta title="Way Art" />
-      <Header />
-      <div className="container">
-        <div className="home-serivice">
-          <img src="./images/index-0.png" />
-
-        </div>
-        <div className="home-list">
-          {
-            list.map((item, index) => {
-              const { img, title, text } = item
-              return (
-                <div className="home-item" key={index}>
-                  <img src={'./images/' + img} alt={title} />
-                  <div className="home-item-desc">
-                    <h2>{title}</h2>
-                    <p>{text}</p>
+  render() {
+    const { title, list = [] } = this.props
+    const { isShow } = this.state
+  
+    return (
+      <Fragment>
+        <DocumentMeta title="Way Art" />
+        <Header />
+        
+        <div className={`container ${isShow ? 'page-show' : 'page-none'}`}>
+          <div className="home-serivice">
+            <img src="./images/index-0.png" />
+          </div>
+          <div className="home-list">
+            {
+              list.map((item, index) => {
+                const { img, title, text } = item
+                return (
+                  <div className="home-item" key={index}>
+                    <img src={'./images/' + img} alt={title} />
+                    <div className="home-item-desc">
+                      <h2>{title}</h2>
+                      <p>{text}</p>
+                    </div>
                   </div>
-                </div>
-              )
-            })
-          }
+                )
+              })
+            }
+          </div>
         </div>
-      </div>
-      <Footer />
-    </Fragment>
-  )
+        <Footer />
+      </Fragment>
+    )
+  }
 }
 
 

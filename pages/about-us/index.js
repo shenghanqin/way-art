@@ -12,7 +12,7 @@ export default function AboutUs() {
       <DocumentMeta title="About - Way Art" />
       <Header />
       <div className="container">
-        <div className="home-list">
+        <div className="home-list2">
          
           关于我们
         </div>
