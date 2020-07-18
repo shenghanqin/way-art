@@ -1,13 +1,8 @@
 import React, { Fragment, PureComponent } from 'react'
-import DocumentMeta from '../../components/document-meta'
-import Header from '../../components/header'
-import Footer from '../../components/footer'
+import Page from '../../components/page'
 import Slider from "react-slick"
 
-
 import './styles.styl'
-import './slick.styl'
-import './slick-theme.styl'
 
 export default class Home extends PureComponent {
   state = {
@@ -29,10 +24,7 @@ export default class Home extends PureComponent {
     }
   
     return (
-      <Fragment>
-        <DocumentMeta title="Way Art" />
-        <Header />
-        
+      <Page title="Way Art">
         <div className='page-container'>
           <div className="home-list">
             <Slider {...settings}>
@@ -54,8 +46,7 @@ export default class Home extends PureComponent {
             </Slider>
           </div>
         </div>
-        <Footer />
-      </Fragment>
+      </Page>
     )
   }
 }
