@@ -1,3 +1,56 @@
+.home-list
+  .slick-arrow
+    display none
+  .slick-dots
+    bottom 8px
+    & >li button
+      &:before
+        font-size 40px
+        opacity 0.5
+        color #fff
+    & > li.slick-active button:before
+      opacity 1
+      color #fff
+
+.home-item
+  position relative
+  cursor pointer
+
+  & > img 
+    width 100%
+    height auto
+    display block
+
+  .home-item-mask
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    background linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+
+  .home-item-desc
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    padding 10px
+
+    h2
+      color #fff
+      font-size 22px
+      line-height 1.5
+      text-align center
+
+    p
+      height 80px
+      color #fff
+      font-size 12px
+      line-height 1.5
+
+      &:first-letter
+        font-size 22px
+
 @media (max-width 1024px)
 
   .home-serivice
@@ -6,50 +59,50 @@
       max-width 100%
       height auto
 
-  .home-list
+  // .home-list
 
-    .home-item
-      position relative
-      cursor pointer
-      & > img 
-        width 100%
-        height auto
-        display block
+  //   .home-item
+  //     position relative
+  //     cursor pointer
+  //     & > img 
+  //       width 100%
+  //       height auto
+  //       display block
 
 
-    .home-item-desc
-      position absolute
-      left 0
-      right 0
-      bottom 0
-      background rgba(255, 255, 255, 0.56)
+  //   .home-item-desc
+  //     position absolute
+  //     left 0
+  //     right 0
+  //     bottom 0
+  //     background rgba(255, 255, 255, 0.56)
 
-      h2
-        color #0C0C0C
-        font-size 22px
-        line-height 1.5
-        text-align center
+  //     h2
+  //       color #0C0C0C
+  //       font-size 22px
+  //       line-height 1.5
+  //       text-align center
       
-      p
-        display none
-        color #0C0C0C
-        font-size 12px
-        line-height 1.5
+  //     p
+  //       display none
+  //       color #0C0C0C
+  //       font-size 12px
+  //       line-height 1.5
 
-        &:first-letter
-          font-size 22px
+  //       &:first-letter
+  //         font-size 22px
       
 
-    .home-item:hover .home-item-desc
-      background rgba(109,109,109, 0.5)
-      padding 30px 50px 50px
+  //   .home-item:hover .home-item-desc
+  //     background rgba(109,109,109, 0.5)
+  //     padding 30px 50px 50px
 
-      h2
-        color #ffffff
+  //     h2
+  //       color #ffffff
       
-      p
-        display block
-        color #ffffff
+  //     p
+  //       display block
+  //       color #ffffff
 
 
     

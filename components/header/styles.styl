@@ -1,40 +1,50 @@
 .header
-  border-bottom 1px solid #F4F4F4
-  margin-bottom 14px
-
+  background-color #000
+  position fixed
+  left 0
+  right 0
+  top 0
 
 .header-content
-  display flex
-  justify-content space-between
-  padding 14px 18px
+  padding-top 1px
+  // display flex
+  // justify-content space-between
+  // padding 14px 18px
   
 
 .logo
-  width 80px
-  height 80px
-  
+  width 62px
+  height 52px
+  margin 4px auto
   & > a
     display block
-    img
-      max-width 100%
-      height auto
+    height 100%
+    background url(https://image-hosting.xiaoxili.com/img/20200718193412.png) no-repeat
+    background-size contain
+    text-indent -9999px
+    overflow hidden
 
 .site-nav
-  // display flex
+  display flex
   // align-items center
 
-  li + li
-    margin-top 8px
+  li
+    flex 1
 
   a
     display block
-    color #686868
+    color #fff
     font-size 14px
-    line-height 1.4
+    line-height 36px
     font-weight 600
+    text-align center
+    border-bottom 4px solid transparent
 
-    &:hover
-      color #000
+    &.nav-active
+      color #0061FF
+      border-color #0061FF
+
+
 
 @media (min-width 1025px)
   

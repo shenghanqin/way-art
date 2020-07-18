@@ -2,8 +2,12 @@ import React, { Fragment, PureComponent } from 'react'
 import DocumentMeta from '../../components/document-meta'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
+import Slider from "react-slick"
+
 
 import './styles.styl'
+import './slick.styl'
+import './slick-theme.styl'
 
 export default class Home extends PureComponent {
   state = {
@@ -16,31 +20,38 @@ export default class Home extends PureComponent {
   render() {
     const { title, list = [] } = this.props
     const { isShow } = this.state
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
   
     return (
       <Fragment>
         <DocumentMeta title="Way Art" />
         <Header />
         
-        <div className={`container ${isShow ? 'page-show' : 'page-none'}`}>
-          <div className="home-serivice">
-            <img src="./images/index-0.png" />
-          </div>
+        <div className='page-container'>
           <div className="home-list">
-            {
-              list.map((item, index) => {
-                const { img, title, text } = item
-                return (
-                  <div className="home-item" key={index}>
-                    <img src={'./images/' + img} alt={title} />
-                    <div className="home-item-desc">
-                      <h2>{title}</h2>
-                      <p>{text}</p>
+            <Slider {...settings}>
+              {
+                list.map((item, index) => {
+                  const { img, title, text } = item
+                  return (
+                    <div className="home-item" key={index}>
+                      <img src={'./images/' + img} alt={title} />
+                      <div className="home-item-mask"></div>
+                      <div className="home-item-desc">
+                        <h2>{title}</h2>
+                        <p>{text}</p>
+                      </div>
                     </div>
-                  </div>
-                )
-              })
-            }
+                  )
+                })
+              }
+            </Slider>
           </div>
         </div>
         <Footer />

@@ -7,18 +7,18 @@ export default function Header(props) {
       <div className="header-content">
         <h1 className="logo">
           <Link href='./'>
-            <img src="./images/logo.png" alt='Way Art' />
+            Way Art
           </Link>
         </h1>
         <ul className="site-nav">
           <li>
-            <Link href='about-us'>OUR BUSINESS</Link>
+            <a data-type='slide' className='nav-active'>OUR BUSINESS</a>
           </li>
           <li>
-            <Link href='about-us'>ABOUT US</Link>
+            <a data-type='about'>ABOUT US</a>
           </li>
           <li>
-            <Link href='contact-us'>CONTACT US</Link>
+            <a data-type='contact'>CONTACT US</a>
           </li>
         </ul>
 
