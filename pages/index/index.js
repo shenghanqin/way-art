@@ -13,7 +13,7 @@ export default class Home extends PureComponent {
   }
 
   render() {
-    const { title, list = [] } = this.props
+    const { title, list = [], cards = [] } = this.props
     const { isShow } = this.state
     const settings = {
       dots: true,
@@ -44,6 +44,19 @@ export default class Home extends PureComponent {
                 })
               }
             </Slider>
+          </div>
+          <div className="home-cards">
+            {
+              cards.map(item => {
+                const { icon, text } = item
+                return (
+                  <div key={text} className="card-item">
+                    <img src={'./images/' + icon} alt={text} />
+                    <p>{text}</p>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </Page>
@@ -89,6 +102,24 @@ export async function getStaticProps() {
           title: 'Way to Life',
           text: '优化资产配置，欧洲投资，移居欧洲定制方案。'
         }
+      ],
+      cards: [
+        {
+          icon: 'icon-1-school.png',
+          text: '合作院校'
+        },
+        {
+          icon: 'icon-2-teacher.png',
+          text: '大师简介'
+        },
+        {
+          icon: 'icon-3-class.png',
+          text: '课程简介'
+        },
+        {
+          icon: 'icon-4-env.png',
+          text: '教学环境'
+        },
       ]
     }
   }
