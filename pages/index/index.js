@@ -20,13 +20,14 @@ export default class Home extends PureComponent {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true
     }
   
     return (
       <Page title="Way Art">
         <div className='page-container'>
-          <div className="home-list">
+          <div className="home-list" id="slide">
             <Slider {...settings}>
               {
                 list.map((item, index) => {
@@ -57,6 +58,39 @@ export default class Home extends PureComponent {
                 )
               })
             }
+          </div>
+          <div className="home-about" id="about">
+            <h2>关于 Way Art</h2>
+            <h4>About Us</h4>
+            <img src="./images/icon-blue.png" />
+            <p>WAY ART成立于2020年，致力于海外艺术文化领域的教育与投资, 为中国学生和企业提供一站式海外研学和实践培 训服务，同时也协助中国企业和企业家遴选海外项目遴选及优化资产配置。</p>
+            <p>WAY ART专注"国际化艺术指导、专业作品集培训、留学艺术规划、世界名校申请”等多元化服务。同时，WAY ART以尊重艺术，培养未来新兴艺术家为基础，致力于为学生建立正统的西方艺术思维方式。</p>
+          </div>
+          <div className="home-contact" id="contact">
+            <h2>联系 Way Art</h2>
+            <h4>Contact Us</h4>
+            <img src="./images/icon-blue.png" />
+            <p>咨询电话：<a href="tel:400-915-5927">400-915-5927</a></p>
+            <div className="home-contact-qrcode">
+              <div className="qrcode-text">
+                客服微信：<br />
+                搜索“way-art”<br />
+                或扫描二维码添加好友
+              </div>
+              <div className="qrcode-image">
+                <img src="./images/way-art-helper.png" />
+              </div>
+            </div>
+            <div className="home-contact-qrcode">
+              <div className="qrcode-text">
+                微信公众号：<br />
+                Way Art<br />
+                或扫描二维码关注我们
+              </div>
+              <div className="qrcode-image">
+                <img src="./images/way-art-mp.png" />
+              </div>
+            </div>
           </div>
         </div>
       </Page>

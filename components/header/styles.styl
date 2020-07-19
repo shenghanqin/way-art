@@ -8,9 +8,6 @@
 
 .header-content
   padding-top 1px
-  // display flex
-  // justify-content space-between
-  // padding 14px 18px
   
 
 .logo
@@ -27,7 +24,11 @@
 
 .site-nav
   display flex
-  // align-items center
+  align-items flex-end
+
+.site-nav ul
+  display flex
+  
 
   li
     flex 1
@@ -40,42 +41,37 @@
     font-weight 600
     text-align center
     border-bottom 4px solid transparent
+    white-space nowrap
 
-    &.nav-active
-      color #0061FF
-      border-color #0061FF
+  .nav-active a
+    color #0061FF
+    border-color #0061FF
 
 
 
 @media (min-width 1025px)
   
-  .header
-    margin-bottom 30px
+  // .header
+  //   margin-bottom 30px
   .header-content
+    display flex
+    justify-content space-between
+    
+  
     max-width 1200px
     margin 0 auto
-    padding 30px 72px
     box-sizing border-box
 
 
   .logo
-    width 104px
-    height 98px
+    width 94px
+    height 76px
+    margin 12px 0
 
   .site-nav
-    display flex
-    align-items center
+    align-items flex-end
 
     li + li
-      margin-top 0
-      margin-left 72px
+      margin-left 76px
 
-    a
-      display block
-      color #686868
-      font-size 16px
-      line-height 1.4
-      font-weight 600
-
-      &:hover
-        color #000
+  
