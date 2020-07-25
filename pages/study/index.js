@@ -5,16 +5,16 @@ import Footer from '../../components/footer'
 
 import './styles.styl'
 
-export default function AboutUs() {
+export default function Study() {
 
   return (
     <Fragment>
-      <DocumentMeta title="About - Way Art" />
+      <DocumentMeta title="Contact - Way Art" />
       <Header />
       <div className="container">
-        <div className="home-list2">
+        <div className="home-list">
          
-          关于我们
+          联系我们
         </div>
       </div>
       <Footer />

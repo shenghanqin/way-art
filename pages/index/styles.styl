@@ -61,14 +61,18 @@
 
   .card-item
     width 48%
-    display flex
-    align-items center
-    justify-content center
-    padding 10px 0
-    background #F0F0F0
-    border-radius 8px
 
-    & > img
+    & > a
+      padding 10px 0
+      background #F0F0F0
+      display flex
+      align-items center
+      justify-content center
+      border-radius 8px
+      color #262626
+
+
+    img
       width auto
       height 28px
       margin-right 10px
@@ -77,7 +81,7 @@
     &:nth-child(4)
       margin-top 20px
   
-    &:hover
+    & a:hover
        background linear-gradient(150deg,rgba(0,97,255,1),rgba(0,154,255,1))
        color #fff
        & > img 
@@ -173,13 +177,16 @@
     padding 73px auto
 
     .card-item
-      padding 25px 0
       width 24%
-      font-size 25px
       &:nth-child(n)
         margin-top 0
 
-      & > img 
+      & > a
+        padding 25px 0
+        font-size 25px
+
+
+      img 
         height 50px
 
   .home-about

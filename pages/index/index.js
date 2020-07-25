@@ -1,6 +1,7 @@
 import React, { Fragment, PureComponent } from 'react'
 import Page from '../../components/page'
 import Slider from "react-slick"
+import Link from '../../components/link-html'
 
 import './styles.styl'
 
@@ -49,11 +50,13 @@ export default class Home extends PureComponent {
           <div className="home-cards">
             {
               cards.map(item => {
-                const { icon, text } = item
+                const { icon, text, link } = item
                 return (
                   <div key={text} className="card-item">
-                    <img src={'./images/' + icon} alt={text} />
-                    <p>{text}</p>
+                    <Link href={link}>
+                      <img src={'./images/' + icon} alt={text} />
+                      <p>{text}</p>
+                    </Link>
                   </div>
                 )
               })
@@ -140,19 +143,23 @@ export async function getStaticProps() {
       cards: [
         {
           icon: 'icon-1-school.png',
-          text: '合作院校'
+          text: '合作院校',
+          link: '/study'
         },
         {
           icon: 'icon-2-teacher.png',
-          text: '大师简介'
+          text: '名师简介',
+          link: '/teacher'
         },
         {
           icon: 'icon-3-class.png',
-          text: '课程简介'
+          text: '课程简介',
+          link: '/study'
         },
         {
           icon: 'icon-4-env.png',
-          text: '教学环境'
+          text: '教学环境',
+          link: '/study'
         },
       ]
     }
