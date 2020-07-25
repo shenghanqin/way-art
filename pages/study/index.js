@@ -6,7 +6,7 @@ import './styles.styl'
 export default function Study() {
 
   return (
-    <Page title="Way Art 院校">
+    <Page title="Way Art 院校" pageClassName="page-study">
 
     </Page>
   )

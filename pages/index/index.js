@@ -26,7 +26,7 @@ export default class Home extends PureComponent {
     }
   
     return (
-      <Page title="Way Art">
+      <Page title="Way Art" pageClassName="page-home">
         <div className='page-container'>
           <div className="home-list" id="slide">
             <Slider {...settings}>
