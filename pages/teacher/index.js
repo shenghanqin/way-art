@@ -12,7 +12,7 @@ export default class Teacher extends React.Component {
     let _tabEleIds = list.map(tab => `tab-${tab.img}`)
 
     return (
-      <Page title="名校简介" pageClassName="page-teacher">
+      <Page title="名师简介" pageClassName="page-teacher">
         <div className='page-container'>
           <div className="teacher-slider">
             <Scrollspy
@@ -35,38 +35,19 @@ export default class Teacher extends React.Component {
                       <div data-id={dataId} className={('scrollspy-item-inner')}>
                         <img data-id={dataId} className="item-img" src={'./images/' + img + '.png'} alt={title} />
                         <div data-id={dataId} className="item-title">{title}</div>
-                        <div className="item-slug">{slug}</div>
+                        <div data-id={dataId} className="item-slug">{slug}</div>
                       </div>
                     </li>
                   )
-                  // return (
-                  //   <li className={cx('scrollspy-item')} key={tabIndex}>
-                  //     <span data-id={`#tab-${moduleId}`} className={cx('scrollspy-item-inner')}>{moduleIndexName || moduleName}</span>
-                  //   </li>
-                  // )
                 })
               }
             </Scrollspy>
-            {/* <Slider {...settings}>
-              {
-                list.map((item) => {
-                  const { img, slug, subTitle, text, works } = item
-                  return (
-                    <div key={subTitle}>
-                      <img src={'./images/' + img + '.png'} alt={subTitle} />
-                      <div>{subTitle}</div>
-                      <div>{slug}</div>
-                    </div>
-                  )
-                })
-              }
-            </Slider> */}
           </div>
           {
             list.map((item => {
               const { img, title, subTitle, text, works } = item
               return (
-                <div className="teacher-item" key={subTitle} id={'tab-' + img}>
+                <div className="teacher-item" key={title} id={'tab-' + img}>
                   <div className="teacher-image">
                     <img src={'./images/' + img + '.png'} alt={title} />
                   </div>
@@ -212,8 +193,8 @@ Dolceacqua 的Castello dei Doria 集体展览
         {
           img: 'teacher-7',
           title: 'Astore Biagio',
-          subTitle: '意大利艺术设计史教授',
-          slug: '',
+          subTitle: '',
+          slug: '意大利艺术设计史教授',
           text: `意大利艺术设计史教授
 
 
