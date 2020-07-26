@@ -50,10 +50,10 @@ export default class Home extends PureComponent {
           <div className="home-cards">
             {
               cards.map(item => {
-                const { icon, text, link } = item
+                const { icon, text, link, hash } = item
                 return (
                   <div key={text} className="card-item">
-                    <Link href={link}>
+                    <Link href={link} hash={hash}>
                       <img src={'./images/' + icon} alt={text} />
                       <p>{text}</p>
                     </Link>
@@ -144,7 +144,8 @@ export async function getStaticProps() {
         {
           icon: 'icon-1-school.png',
           text: '合作院校',
-          link: '/study'
+          link: '/study',
+          hash: '#school'
         },
         {
           icon: 'icon-2-teacher.png',
@@ -154,12 +155,14 @@ export async function getStaticProps() {
         {
           icon: 'icon-3-class.png',
           text: '课程简介',
-          link: '/study'
+          link: '/study',
+          hash: '#class'
         },
         {
           icon: 'icon-4-env.png',
           text: '教学环境',
-          link: '/study'
+          link: '/study',
+          hash: '#environment'
         },
       ]
     }

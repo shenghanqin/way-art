@@ -1,0 +1,137 @@
+.page-study
+  .header
+    position absolute
+
+  .section-header
+    height 77px
+    line-height 66px
+    padding-left 47px
+    background url(https://image-hosting.xiaoxili.com/img/20200726212844.png) no-repeat left center
+    background-size contain
+    color rgba(0, 0, 0, 0.8)
+    font-weight bold
+    // font-size 30px
+    font-size 20px
+
+  .study-section
+    padding 50px 18px 0
+
+    &:last-child
+      padding-bottom 50px
+
+  .school-item
+    margin-top 50px
+    & > img 
+      width 100%
+      height auto
+      display block
+
+    & > h3
+      margin 15px 0 6px
+      font-size 20px
+      line-height 1.4
+      color rgba(0, 0, 0, 0.8)
+      font-weight normal
+    & > p
+      font-size 12px
+      line-height 1.6
+      color rgba(0, 0, 0, 0.8)
+      font-weight normal
+  .class-item
+    margin-top 50px
+    & > img 
+      width 100%
+      height auto
+      display block
+
+    h3
+      margin 15px 0 6px
+      font-size 20px
+      line-height 1.4
+      color rgba(0, 0, 0, 0.8)
+      font-weight normal
+     p
+      font-size 12px
+      line-height 1.6
+      color rgba(0, 0, 0, 0.8)
+      font-weight normal
+    
+
+  .env-list
+    .env-left
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      .img-item
+        margin-top 30px
+        width 48%
+        & > img
+          width 100%
+          height auto
+          display block
+
+    .env-right
+      & > img 
+        margin-top 30px
+        width 100%
+        height auto
+        display block
+
+@media (min-width 1024px)
+  .page-study
+    .section-header
+      font-size 30px
+    .study-section
+      padding-top 70px
+      width 1200px
+      margin 0 auto
+
+    .school-list
+      display flex
+      justify-content space-between
+      flex-wrap wrap
+    
+    .school-item
+      width 350px
+      padding 10px
+
+      &:hover
+        box-shadow 0 3px 10px 0 rgba(104,117,131,.14)
+
+      & > img
+        transition: 1.2s ease-in-out;
+        &:hover
+          transform: scale(1.02) rotate(.02deg)
+
+    .class-list
+      display flex
+      justify-content space-between
+      flex-wrap wrap
+    
+    .class-item
+      padding 10px
+      width 570px
+      display flex
+      align-items center
+      &:hover
+        box-shadow 0 3px 10px 0 rgba(104,117,131,.14)
+
+      & > img
+        width 260px
+        margin-right 30px
+        transition: 1.2s ease-in-out;
+        &:hover
+          transform: scale(1.02) rotate(.02deg)
+    
+    .env-list
+      display flex
+      img
+        transition: 1.2s ease-in-out;
+        &:hover
+          transform: scale(1.02) rotate(.02deg)
+      .env-left
+        width 574px
+      
+      .env-right
+        width 600px
+        margin-left 26px

@@ -12,7 +12,7 @@ export default class Teacher extends React.Component {
     let _tabEleIds = list.map(tab => `tab-${tab.img}`)
 
     return (
-      <Page title="名师简介" pageClassName="page-teacher">
+      <Page title="Teacher" pageClassName="page-teacher">
         <div className='page-container'>
           <div className="teacher-slider">
             <Scrollspy
