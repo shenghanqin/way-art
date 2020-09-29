@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "cloudbase framework:deploy"
+    "deploy": "tcb framework deploy  --verbose"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",

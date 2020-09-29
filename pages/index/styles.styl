@@ -1,8 +1,28 @@
 .home-list
   max-width 1200px
   margin 0 auto
-  .slick-arrow
-    display none !important
+  
+  .slick-prev
+  .slick-next
+    width 40px
+    height 40px
+    background rgba(255, 255, 255, 0.2)
+    border-radius 50%
+    z-index 1
+
+    &:before
+      font-size 30px
+      color rgba(255, 255, 255, 0.4)
+  .slick-prev
+    left 25px
+    padding-right 5px
+    &:before
+      content '◀'
+  .slick-next
+    padding-left 5px
+    right 25px
+    &:before
+      content '►'
   .slick-dots
     bottom 8px
     & >li button
@@ -55,12 +75,12 @@
 
 .home-cards
   display flex
-  margin 20px 18px
+  margin 20px 10px
   flex-wrap wrap
   justify-content space-between
 
   .card-item
-    width 48%
+    width 32%
 
     & > a
       padding 10px 0
@@ -74,12 +94,12 @@
 
     img
       width auto
-      height 28px
+      height 20px
       margin-right 10px
 
-    &:nth-child(3)
-    &:nth-child(4)
-      margin-top 20px
+    // &:nth-child(3)
+    // &:nth-child(4)
+    //   margin-top 20px
   
     & a:hover
        background linear-gradient(150deg,rgba(0,97,255,1),rgba(0,154,255,1))
@@ -144,10 +164,16 @@
     & > img 
       width auto
       height 100px
-    
+@media (max-width 1024px)
+
+  .home-list
+    .slick-arrow
+      display none !important
+
 @media (min-width 1025px)
 
   .home-list
+
     .home-item
       & > img 
         height 600px
@@ -177,10 +203,6 @@
     padding 73px auto
 
     .card-item
-      width 24%
-      &:nth-child(n)
-        margin-top 0
-
       & > a
         padding 25px 0
         font-size 25px

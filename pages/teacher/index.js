@@ -97,6 +97,18 @@ export async function getStaticProps() {
 定期与艺术大师Marco Beretta指挥的米兰ADAD学院乐团合作，在Busseto的Verdi剧院演出作品和举办音乐会。`
         },
         {
+          img: 'teacher-18',
+          title: 'Davide Rocca',
+          subTitle: '',
+          slug: '意大利男中音',
+          text: `完成学业后，在罗马作为歌唱家以及钢琴家开始他的音乐生涯。
+他参演过过威尔第，罗西尼，比才等知名音乐家的作品不计其数，此外，他还为“Bongiovanni”出版了G.Niccolini的“L’amor Mugnaio”的录音。他与大师马蒂尼奥-卢特罗·加拉蒂·德·奥利维拉和他的两个合唱团长期合作，并与他们进行了多次巡回演出，演奏交响乐和神圣的曲目。他曾在国外的意大利文化机构和大使馆举行多次音乐会。
+。
+在音乐会上，他以高超的表演技巧而闻名。2003年，他与K.Ricciarelli在Corigliano d‘Otranto与莱切管弦乐团合作，指挥G.Palleschi，2004年，他与米兰UECA管弦乐团指挥W.Kuenstler在Chiesa N.S.演出了巴赫的“B小调大弥撒”。除了许多莫扎特的弥撒和更罕见的作品（F.门德尔松的“Magnificat”）的演出外，2008年还在E.Morricone大师的见证下为联合国儿童基金会演出了他的一些作品。最近，他在米兰演出了勃拉姆斯的“德国安魂曲”。从2010年开始，在日本（广岛和京都）和中国（上海和香港）举行了一些重要的音乐会。
+`,
+          works: `在教学领域，他是意大利和国外许多大师班的讲师，其中包括基辅“乌克兰”国立音乐学院的大师班，该学院由意大利文化学院赞助，被宣布为2015年年度文化活动`
+        },
+        {
           img: 'teacher-2',
           title: 'MICHELE PORCELLI',
           subTitle: '米凯莱·波切利',
@@ -115,6 +127,7 @@ export async function getStaticProps() {
 
 唱片：《霍尔布兹海峡》《游唱诗人》《国王〉《黑色多米诺》《尼禄大帝》，以及与卡雷拉斯 · 里恰蕾丽合作的《费朵拉》。`
         },
+        
         {
           img: 'teacher-3',
           title: 'SIMONA MARZILLI',

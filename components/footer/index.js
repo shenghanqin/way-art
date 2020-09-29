@@ -4,8 +4,7 @@ export default function Footer(props) {
   return (
     <footer className="footer">
       <div className="footer-content">
-        公网安备 Xxxxxx1号 ， 京ICP备cxxxxxxx， 京网文【ccccccc号， 京ICP证xxxxxx号<br />
-        京朝艺【2017】0154号 违法和不良信息举报电话：010-xxxxxxx
+        Copyright © 2020 华葳 All Rights Reserved. <a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">沪ICP备20023198号</a>
       </div>
     </footer>
   )
