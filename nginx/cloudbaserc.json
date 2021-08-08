@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "envId": "www-301-7ghm6rnaa325e8f1",
+  "framework": {
+    "name": "nginx",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "nginx",
+          "servicePath": "/",
+          "localPath": "./"
+        }
+      }
+    }
+  }
+}

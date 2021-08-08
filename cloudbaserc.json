@@ -1,6 +1,7 @@
 {
-  "envId": "env-hqngehhw",
+  "envId": "static-6go9owkga232948a",
   "framework": {
+    "name": "static",
     "plugins": {
       "static": {
         "use": "@cloudbase/framework-plugin-website",
