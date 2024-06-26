@@ -18,5 +18,8 @@
     "react-slick": "^0.27.0",
     "slick-carousel": "^1.8.1",
     "stylus": "^0.54.7"
+  },
+  "resolutions": {
+    "webpack": "~4.43.0"
   }
 }
