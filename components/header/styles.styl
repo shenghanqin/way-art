@@ -1,0 +1,77 @@
+.header
+  background-color #000
+  position fixed
+  left 0
+  right 0
+  top 0
+  z-index 1
+
+.header-content
+  padding-top 1px
+  
+
+.logo
+  width 62px
+  height 52px
+  margin 4px auto
+  & > a
+    display block
+    height 100%
+    background url(https://image-hosting.xiaoxili.com/img/20200718193412.png) no-repeat
+    background-size contain
+    text-indent -9999px
+    overflow hidden
+
+.site-nav
+  display flex
+  align-items flex-end
+
+.site-nav ul
+  display flex
+  width 100%
+
+  li
+    flex 1
+
+  a
+    display block
+    color #fff
+    font-size 14px
+    line-height 36px
+    font-weight 600
+    text-align center
+    border-bottom 4px solid transparent
+    white-space nowrap
+
+  .nav-active a
+    color #0061FF
+    border-color #0061FF
+
+
+
+@media (min-width 1025px)
+  
+  // .header
+  //   margin-bottom 30px
+  .header-content
+    display flex
+    justify-content space-between
+    
+  
+    max-width 1200px
+    margin 0 auto
+    box-sizing border-box
+
+
+  .logo
+    width 94px
+    height 76px
+    margin 12px 0
+
+  .site-nav
+    align-items flex-end
+
+    li + li
+      margin-left 76px
+
+  

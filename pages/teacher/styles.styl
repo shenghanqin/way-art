@@ -1,0 +1,133 @@
+.page-teacher
+  .header
+    position absolute
+
+.teacher-item
+  margin 0 18px
+  padding 60px 0 0
+
+  &:last-child
+    margin-bottom 60px
+
+  .teacher-image
+    width 100px
+    height 100px
+    margin 0 auto 15px
+    padding 6px
+    border-radius 50%
+    box-shadow:0px 2px 3px 0px rgba(0,0,0,0.5);
+    & > img 
+      width 100%
+      height auto
+      display block
+  
+  h2, h4
+    text-align center
+    font-size 22px
+    line-height 30px
+    color #252525
+  h4
+    margin-top 5px
+  p
+    white-space pre-line
+    text-align center
+  
+  h5
+    position relative
+    margin-top 38px
+    text-align center
+    font-size 14px
+    color #6D6D6D
+
+    &:after
+      content ''
+      display block
+      margin 0 auto
+      width 84px
+      height 1px
+      background #6D6D6D
+  
+  h6
+    margin-bottom 25px
+    position relative
+    text-align center
+    font-size 30px
+    line-height 68px
+    color #434343
+
+    &:before
+    &:after
+      content ''
+      position absolute
+      top 34px
+      width calc((100% - 210px) / 2)
+      height 3px
+      background #000
+    &:before
+      left 0
+    &:after
+      right 0
+
+.teacher-slider
+  margin-bottom 20px
+  .scrollspy-outer
+    height 62px
+    .scrollspy-iscroll
+      height 62px
+  .scrollspy-wrap
+    margin 0 10px
+  .scrollspy-list
+    .scrollspy-item-inner
+      padding 5px
+      line-height 25px
+      max-width none
+  .item-img
+    margin 0 auto
+    width 30px
+    height 30px
+    display block
+  .item-title
+    font-size 12px
+
+  .item-slug
+    display none
+  // .scrollspy-list
+    
+
+@media (min-width 1024px)
+  .teacher-slider
+    width 1200px
+    margin 0 auto
+    height 500px
+    background url(https://image-hosting.xiaoxili.com/img/20200725142736.png) no-repeat
+
+    display flex
+    align-items flex-end
+    .scrollspy-outer
+      width 100%
+      padding-bottom 20px
+      height 160px
+      .scrollspy-iscroll
+        height 160px
+      .scrollspy-item
+        min-width 160px
+      .scrollspy-item-inner
+        text-align center
+        padding 5px 12px
+        transition 0.3s all
+    
+    .item-img
+      width 100px
+      height 100px
+    .item-slug
+      display block
+      font-size 12px
+  
+  .teacher-item
+    max-width 748px
+    margin 0 auto
+
+    .teacher-image
+      width 165px
+      height 165px
+    

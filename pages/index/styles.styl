@@ -1,0 +1,238 @@
+.home-list
+  max-width 1200px
+  margin 0 auto
+  
+  .slick-prev
+  .slick-next
+    width 40px
+    height 40px
+    background rgba(255, 255, 255, 0.2)
+    border-radius 50%
+    z-index 1
+
+    &:before
+      font-size 30px
+      color rgba(255, 255, 255, 0.4)
+  .slick-prev
+    left 25px
+    padding-right 5px
+    &:before
+      content '◀'
+  .slick-next
+    padding-left 5px
+    right 25px
+    &:before
+      content '►'
+  .slick-dots
+    bottom 8px
+    & >li button
+      &:before
+        font-size 40px
+        opacity 0.5
+        color #fff
+    & > li.slick-active button:before
+      opacity 1
+      color #fff
+
+.home-item
+  position relative
+  cursor pointer
+
+  & > img 
+    width 100%
+    height auto
+    display block
+
+  .home-item-mask
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    background linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+
+  .home-item-desc
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    padding 10px
+
+    h2
+      color #fff
+      font-size 22px
+      line-height 1.5
+      text-align center
+
+    p
+      min-height 80px
+      color #fff
+      font-size 12px
+      line-height 1.5
+
+      &:first-letter
+        font-size 22px
+
+.home-cards
+  display flex
+  margin 20px 10px
+  flex-wrap wrap
+  justify-content space-between
+
+  .card-item
+    width 32%
+
+    & > a
+      padding 10px 0
+      background #F0F0F0
+      display flex
+      align-items center
+      justify-content center
+      border-radius 8px
+      color #262626
+
+
+    img
+      width auto
+      height 20px
+      margin-right 10px
+
+    // &:nth-child(3)
+    // &:nth-child(4)
+    //   margin-top 20px
+  
+    & a:hover
+       background linear-gradient(150deg,rgba(0,97,255,1),rgba(0,154,255,1))
+       color #fff
+       & > img 
+         filter: invert(100%);
+
+.home-about
+  padding 100px 18px
+  background #1a1a1a
+  color #ffffff
+
+  h2, h4
+    text-align center
+  
+  h4
+   opacity 0.8
+
+  & > img 
+    width 100px
+    height auto
+    display block
+    margin 15px auto
+  
+  p
+    font-size 14px
+    margin-top 5px
+    opacity 0.8
+
+.home-contact
+  padding 100px 18px
+  background #fff
+
+  h2, h4
+    text-align center
+
+  & > img 
+    width 100px
+    height auto
+    display block
+    margin 15px auto
+  
+  p
+    margin-top 5px
+    text-align center
+
+  a
+    color #0061ff
+
+.home-contact-qrcode
+  display flex
+  margin 35px auto 15px
+  color #262626
+  width 300px
+  justify-content space-between
+  align-items center
+
+  .qrcode-image
+    width 100px
+    height 100px
+    background #000
+
+    & > img 
+      width auto
+      height 100px
+@media (max-width 1024px)
+
+  .home-list
+    .slick-arrow
+      display none !important
+
+@media (min-width 1025px)
+
+  .home-list
+
+    .home-item
+      & > img 
+        height 600px
+        display block
+
+    .home-item-desc
+      position absolute
+      left 334px
+      right 0
+      bottom 50px
+      width 393px
+
+      h2
+        font-size 46px
+        line-height 65px
+        text-align center
+      
+      p
+        font-size 18px
+        line-height 1.43
+
+        &:first-letter
+          font-size 30px
+  .home-cards
+    max-width 1200px
+    margin 80px auto
+    padding 73px auto
+
+    .card-item
+      & > a
+        padding 25px 0
+        font-size 25px
+
+
+      img 
+        height 50px
+
+  .home-about
+    // padding 73px 0
+    h2
+      font-size 30px
+
+    h4
+     font-size 18px
+
+    p
+      width 541px
+      margin 5px auto
+      font-size 16px
+    
+  .home-contact
+    h2
+      font-size 30px
+
+    h4
+     font-size 18px
+
+    p
+      width 541px
+      margin 5px auto
+      font-size 16px

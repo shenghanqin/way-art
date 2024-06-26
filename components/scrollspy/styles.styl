@@ -1,0 +1,154 @@
+.scrollspy-outer
+  height 45px
+  padding-top 20px
+  
+  :global
+    .scrollspy-mask
+      position fixed
+      left 0
+      right 0
+      top 0
+      bottom: 0
+      background: rgba(0, 0, 0, 0.75)
+      z-index 20
+
+    .scrollspy-wrap
+      position relative
+      z-index 20
+      background #fff
+      margin 0 18px
+      border-radius: 5px
+      overflow hidden
+
+      -webkit-overflow-scrolling: touch;
+      // 客户端滚动条样式
+      ::-webkit-scrollbar { width: 6px; height: 8px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box }
+      ::-webkit-scrollbar-button { width: 0; height: 0; }
+      ::-webkit-scrollbar-track { -webkit-border-radius: 8px; }
+      ::-webkit-scrollbar-thumb { background-color: rgba(70, 77, 92, 0.4);  -webkit-border-radius: 5px }
+      ::-webkit-scrollbar-thumb:hover { background-color: #999999;}
+      ::-webkit-scrollbar-thumb:active { background-color: #999999; }
+      ::-webkit-scrollbar-corner { background-color: #f1f1f1; -webkit-border-radius: 1px }
+      ::-webkit-scrollbar-track:hover { background-color: transparent }
+    
+      .scrollspy-btn-wrap
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 46px;
+        height: 45px;
+        line-height: 45px;
+        display flex
+        align-items center
+        justify-content center
+
+      .scrollspy-text
+        display none
+        
+
+      .scrollspy-arrow
+        content ''
+        width 8px
+        height 8px
+        border-style solid 
+        border-width 1px
+        border-color #2f3742
+        border-left-color transparent!important
+        border-top-color transparent!important
+        display block
+        transform rotate(45deg) translate(-3px, -3px)
+        border-radius: 3px
+
+
+      .scrollspy-iscroll
+        margin-right: 46px
+        height 45px
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        
+
+      .scrollspy-list
+        float left
+        font-size 0
+        letter-spacing: -4px
+      .scrollspy-item
+        position relative
+        font-size 14px
+        display inline-block
+        line-height: 45px
+        letter-spacing: 0
+        cursor pointer
+
+        & > span
+          cursor pointer
+          
+      
+      .scrollspy-item-inner
+        vertical-align: top
+        position relative
+        display inline-block
+        max-width: 88px;
+        padding: 0 18px
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color #2F3742
+
+    .ui-affix-fixed
+      .scrollspy-wrap
+        margin 0
+        border-radius: 0
+
+  
+    .scrollspy-wrap.open
+      position relative
+      margin 0
+      border-radius: 0
+    
+      .scrollspy-btn-wrap
+        position static
+        display block
+        width auto
+        padding-right 20px
+        height 45px
+        line-height 45px
+        font-size 12px
+        color #949494
+      
+      .scrollspy-btn
+        float right
+        display flex
+        align-items center
+        justify-content center
+
+      .scrollspy-text
+        display block
+        margin-right 5px
+        font-size 12px
+        color #949494
+
+
+      .scrollspy-arrow
+        transform rotate(225deg) translate(-1px, -3px)
+
+      .scrollspy-iscroll
+        background: #f4f4f4
+        margin-right 0
+        height auto
+
+      .scrollspy-list
+        box-sizing border-box
+        float none
+        white-space initial
+
+      .scrollspy-item
+        width: 33.33%
+        margin-left 0
+        line-height 40px
+        text-align: center
+        box-sizing border-box
+
+      .scrollspy-item-inner
+        max-width 100%
+        box-sizing border-box
+        white-space: nowrap;
